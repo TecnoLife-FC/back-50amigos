@@ -1,6 +1,11 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 class Dish(models.Model):
+
+    class Meta:
+        verbose_name = "platillo"
+        verbose_name_plural = "platillos"
 
     class Category(models.TextChoices):
         STARTER = "ST", "Entradas"
@@ -9,12 +14,12 @@ class Dish(models.Model):
         DESSERTS = "DE", "Postres"
         ICE_CREAMS = "IC", "Helados"
 
-    name = models.CharField(max_length=200)
-    cost = models.DecimalField(max_digits=5, decimal_places=2)
-    image = models.ImageField()
-    description = models.TextField()
-    category = models.CharField(max_length=2, choices=Category.choices)
-    available = models.BooleanField()
+    name = models.CharField(_("nombre"), max_length=200)
+    cost = models.DecimalField(_("precio"), max_digits=5, decimal_places=2)
+    image = models.ImageField(_("imagen"))
+    description = models.TextField(_("descripción"))
+    category = models.CharField(_("categoria"), max_length=2, choices=Category.choices)
+    available = models.BooleanField(_("disponible"))
 
     def __str__(self):
         return self.name
