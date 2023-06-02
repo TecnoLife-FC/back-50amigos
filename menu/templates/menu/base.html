@@ -16,6 +16,13 @@
     <link href="{% sass_src 'menu/scss/button.scss' %}" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class="btn-group d-flex" role="group" aria-label="...">
+      <button type="button" class="btn btn-primary btn-lg">Entradas</button>
+      <button type="button" class="btn btn-primary btn-lg">Platos principales</button>
+      <button type="button" class="btn btn-primary btn-lg">Bebidas</button>
+      <button type="button" class="btn btn-primary btn-lg">Postres</button>
+      <button type="button" class="btn btn-lg" disabled>Helados</button>
+    </div>
     <div id="content">
       {% block content%}
       {% endblock %}
