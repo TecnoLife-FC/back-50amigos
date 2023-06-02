@@ -8,5 +8,3 @@ tmp/
 build
 htmlcov
 *__pychace__*
-
-*.sqlite3
