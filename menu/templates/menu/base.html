@@ -1,4 +1,5 @@
 {% load static %}
+{% load sass_tags %}
 
 {% load django_bootstrap5 %}
 {% bootstrap_css %}
@@ -12,6 +13,7 @@
     <meta lang="es">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{% static 'menu/style.css' %}" rel="stylesheet">
+    <link href="{% sass_src 'menu/scss/button.scss' %}" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id="content">
