@@ -16,7 +16,7 @@ class Dish(models.Model):
 
     name = models.CharField(_("nombre"), max_length=200)
     cost = models.DecimalField(_("precio"), max_digits=5, decimal_places=2)
-    image = models.ImageField(_("imagen"))
+    image = models.ImageField(_("imagen"), upload_to="menu/")
     description = models.TextField(_("descripción"))
     category = models.CharField(_("categoria"), max_length=2, choices=Category.choices)
     available = models.BooleanField(_("disponible"))
