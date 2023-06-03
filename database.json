@@ -1,0 +1,26 @@
+[
+    {
+        "model": "menu.Dish",
+        "fields": {
+            "id": 1,
+            "name": "Tacos de tripa",
+            "cost": "13.00",
+            "image": "menu/tacos.jpg",
+            "description": "Los mejores tacos del mundo",
+            "category": "MD",
+            "available": true
+        }
+    },
+    {
+        "model": "menu.Dish",
+        "fields": {
+            "id": 2,
+            "name": "Enchiladas",
+            "cost": "25.00",
+            "image": "menu/enchiladas.jpg",
+            "description": "Enchiladas de salsa verde con  queso manchego y carne de res",
+            "category": "MD",
+            "available": true
+        }
+    }
+]
