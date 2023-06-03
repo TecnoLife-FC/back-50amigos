@@ -22,5 +22,17 @@
             "category": "MD",
             "available": true
         }
+    },
+    {
+        "model": "menu.Dish",
+        "fields": {
+            "id": 3,
+            "name": "Torta de milanesa",
+            "cost": "42.00",
+            "image": "menu/torta-milanesa.jpg",
+            "description": "La mejor torta del mundo",
+            "category": "MD",
+            "available": true
+        }
     }
 ]
