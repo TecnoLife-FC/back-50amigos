@@ -1,38 +1,218 @@
 [
-    {
-        "model": "menu.Dish",
-        "fields": {
-            "id": 1,
-            "name": "Tacos de tripa",
-            "cost": "13.00",
-            "image": "menu/tacos.jpg",
-            "description": "Los mejores tacos del mundo",
-            "category": "MD",
-            "available": true
-        }
-    },
-    {
-        "model": "menu.Dish",
-        "fields": {
-            "id": 2,
-            "name": "Enchiladas",
-            "cost": "25.00",
-            "image": "menu/enchiladas.jpg",
-            "description": "Enchiladas de salsa verde con  queso manchego y carne de res",
-            "category": "MD",
-            "available": true
-        }
-    },
-    {
-        "model": "menu.Dish",
-        "fields": {
-            "id": 3,
-            "name": "Torta de milanesa",
-            "cost": "42.00",
-            "image": "menu/torta-milanesa.jpg",
-            "description": "La mejor torta del mundo",
-            "category": "MD",
-            "available": true
-        }
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 1,
+      "name": "Tacos de tripa",
+      "cost": "13.00",
+      "image": "menu/tacos.jpg",
+      "description": "Los mejores tacos del mundo",
+      "category": "MD",
+      "available": true
     }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 2,
+      "name": "Enchiladas",
+      "cost": "25.00",
+      "image": "menu/enchiladas.jpg",
+      "description": "Enchiladas de salsa verde con  queso manchego y carne de res",
+      "category": "MD",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 3,
+      "name": "Torta de milanesa",
+      "cost": "42.00",
+      "image": "menu/torta-milanesa.jpg",
+      "description": "La mejor torta del mundo",
+      "category": "MD",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 4,
+      "name": "Fideo Seco",
+      "cost": "39.00",
+      "image": "menu/FideoSecojpg.jpg",
+      "description": "Servido con aguacate, crema, queso panela y chorizo, sobre crema de frijoles.",
+      "category": "ST",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 5,
+      "name": "Arros con Mole",
+      "cost": "32.00",
+      "image": "menu/ArrosMole.jpg",
+      "description": "Arroz a la mexicana, huevo, mole y ceboll\u00edn.",
+      "category": "ST",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 6,
+      "name": "Caldo Tlalpe\u00f1o",
+      "cost": "24.00",
+      "image": "menu/Caldo_Tlalpe\u00f1o.jpg",
+      "description": "Con arroz a la mexicana, pollo, queso Oaxaca y Chipotle.",
+      "category": "ST",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 7,
+      "name": "Crunchy Sandwich",
+      "cost": "25.00",
+      "image": "menu/Crunchy_Sandwich.jpg",
+      "description": "Pan especial envuelto en queso gouda y tocino, con espinaca, lechuga italiana y jitomate.",
+      "category": "MD",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 8,
+      "name": "Milanesa",
+      "cost": "23.00",
+      "image": "menu/Milanesa.jpg",
+      "description": "De res acompa\u00f1ada de enchiladas verdes, frijoles y guacamole.",
+      "category": "MD",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 9,
+      "name": "Arrachera",
+      "cost": "21.00",
+      "image": "menu/Arrachera.jpg",
+      "description": "Con chorizo parrillado, queso panela asado y cebollas cambary, acompa\u00f1ada de guacamole.",
+      "category": "MD",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 10,
+      "name": "Limonada",
+      "cost": "4.00",
+      "image": "menu/Limonada.jpg",
+      "description": "Refrescante limonada natural o mineral.",
+      "category": "DR",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 11,
+      "name": "Refresco",
+      "cost": "5.00",
+      "image": "menu/Refresco.jpg",
+      "description": "Varios sabores. \r\nCoca, Mirinda, Manzanita Sol y Sprite.",
+      "category": "DR",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 12,
+      "name": "Sangr\u00eda",
+      "cost": "7.00",
+      "image": "menu/Sangr\u00eda.jpg",
+      "description": "Con vino tinto, manzana, mel\u00f3n y pi\u00f1a.",
+      "category": "DR",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 13,
+      "name": "Crepas",
+      "cost": "13.00",
+      "image": "menu/Crepas.jpg",
+      "description": "Rellenas de queso crema, servidas con leche condensada, chocolate oscuro y frutos rojos.",
+      "category": "DE",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 14,
+      "name": "Pastel de Chocolate",
+      "cost": "15.00",
+      "image": "menu/Pastel_de_Chocolate.jpg",
+      "description": "Pastel de chocolate negro.",
+      "category": "DE",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 15,
+      "name": "Pastel de Elote",
+      "cost": "17.00",
+      "image": "menu/Pastel_de_Elote.jpg",
+      "description": "Pastel de elote servido con rompope.",
+      "category": "DE",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 16,
+      "name": "Helado de Chocolate",
+      "cost": "11.00",
+      "image": "menu/Helado_de_Chocolate.jpg",
+      "description": "Helado de chocolate con chispas de chocolate",
+      "category": "IC",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 17,
+      "name": "Helado de Vainilla",
+      "cost": "12.00",
+      "image": "menu/Helado_de_Vainilla.jpg",
+      "description": "Helado de vainilla",
+      "category": "IC",
+      "available": true
+    }
+  },
+  {
+    "model": "menu.Dish",
+    "fields": {
+      "id": 18,
+      "name": "Helado de fresa",
+      "cost": "13.00",
+      "image": "menu/Helado_de_fresa.jpg",
+      "description": "Helado de fresa con fresas naturales.",
+      "category": "IC",
+      "available": true
+    }
+  }
 ]
