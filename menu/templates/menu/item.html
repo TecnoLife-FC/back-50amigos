@@ -22,7 +22,11 @@
                   </div>
                 </h5>
                 <p class="card-text">{{ dish.description }}</p>
-                <a href="#" class="btn btn-primary">Agregar a la orden</a>
+                <form action="{% url 'cart:cart_add' dish.id %}" method="post">
+                  {{ cart_dish_form }}
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-primary">Agregar a la orden</button>
+                </form>
               </div>
             </div>
           </div>

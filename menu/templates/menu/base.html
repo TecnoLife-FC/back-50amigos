@@ -26,7 +26,11 @@
             Menú
           <img src="{% static 'menu/images/50amigos-logo.png' %}" alt="50amigos logo" height=50 width=70>
         </a>
-        <img src="{% static 'menu/images/cart.svg' %}" alt="cart logo" class="filter-white" height=40 width=40>
+        {% if show_categories %}
+          <a href="{% url 'cart:cart_detail' %}">
+            <img src="{% static 'menu/images/cart.svg' %}" alt="cart logo" class="filter-white" height=40 width=40>
+          </a>
+        {% endif %}
 
         <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
           <div class="offcanvas-header">
@@ -41,22 +45,24 @@
       </div>
     </nav>
 
-    <div class="btn-group d-flex" role="group" aria-label="...">
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-      <label class="btn btn-outline-primary" for="btnradio1">Entradas</label>
+    {% if show_categories %}
+      <div class="btn-group d-flex" role="group" aria-label="...">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Entradas</label>
 
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio2">Platos principales</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Platos principales</label>
 
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio3">Bebidas</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">Bebidas</label>
 
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio4">Postres</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio4">Postres</label>
 
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" disabled>
-      <label class="btn btn-outline-primary" for="btnradio5">Helados</label>
-    </div>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" disabled>
+        <label class="btn btn-outline-primary" for="btnradio5">Helados</label>
+      </div>
+    {% endif %}
 
     <div id="content">
       {% block content%}
