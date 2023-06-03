@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render
 from django.views import generic
 from cart.forms import CartAddDishForm
@@ -15,3 +16,13 @@ class MenuView(generic.ListView):
 
     def get_queryset(self):
         return Dish.objects.all().order_by("name")
+
+def db_to_json(request):
+    dishes = list(Dish.objects.values())
+    data = []
+    for item in dishes:
+        data.append({
+            "model": "menu.Dish",
+            "fields": item,
+        })
+    return JsonResponse(data, safe=False)
