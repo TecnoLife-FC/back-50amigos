@@ -3,8 +3,8 @@ from django.views import generic
 
 from .models import Dish
 
-class IndexView(generic.ListView):
-    template_name = "menu/index.html"
+class MenuView(generic.ListView):
+    template_name = "menu/item.html"
     context_object_name = "dish_list"
 
     def get_queryset(self):
